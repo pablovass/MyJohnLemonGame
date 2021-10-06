@@ -292,13 +292,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0.9877293, z: -0, w: -0.15617575}
-  m_LocalPosition: {x: 5.7, y: 4.49, z: 9.21}
+  m_LocalRotation: {x: 0, y: 0.9999863, z: -0, w: -0.0052359584}
+  m_LocalPosition: {x: 5.737, y: 4.51, z: 12.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 197.97, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.6, z: 0}
 --- !u!1001 &7609495702988852351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +306,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 600836303034028062, guid: bafe63a2cd2fba240838fe80ad59e64f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
     - target: {fileID: 7609495702025120923, guid: bafe63a2cd2fba240838fe80ad59e64f,
         type: 3}
       propertyPath: m_RootOrder
@@ -365,6 +370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JohnLemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084497338751246591, guid: bafe63a2cd2fba240838fe80ad59e64f,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bafe63a2cd2fba240838fe80ad59e64f, type: 3}
