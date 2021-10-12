@@ -12,6 +12,7 @@ public class LightFlicker : MonoBehaviour
         Random,
         AnimationCurve
     }
+
     
     public Light flickeringLight;
     public Renderer flickeringRenderer;

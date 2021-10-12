@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    // ocurre menos veces que el update 50 por segundo 
+    void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("IsWalking",isWalking);
         
         // creamos una variable de mirada deseada. 
-        Vector3 desiredForward=Vector3.RotateTowards(transform.forward,movement,turnSpeed*Time.deltaTime,0f);
+        Vector3 desiredForward=Vector3.RotateTowards(transform.forward,movement,turnSpeed*Time.fixedDeltaTime,0f);
         
          rotation=Quaternion.LookRotation(desiredForward);
     }
