@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3322150155250270594}
   - component: {fileID: 3322150155257736802}
+  - component: {fileID: 1060330091}
   m_Layer: 0
   m_Name: Gargoyle
   m_TagString: Untagged
@@ -127,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 3322150155250310562}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5a2013629a28744094865983f525d1c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -136,6 +137,20 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &1060330091
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322150155250310562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8449433
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.83929265, z: 0}
 --- !u!1 &4014787932794101802
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7762740920348856390}
   - component: {fileID: 5074707457424091922}
+  - component: {fileID: 342277455}
   m_Layer: 0
   m_Name: PointOfView
   m_TagString: Untagged
@@ -181,3 +197,17 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.95}
+--- !u!114 &342277455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014787932794101802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6a8257aaddc0945bc8fe177d5bed3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  gameEnding: {fileID: 0}
