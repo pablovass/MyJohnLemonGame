@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed;
     public Rigidbody _rigidbody;
     private Quaternion rotation = Quaternion.identity;
+    private AudioSource _audioSource;
     
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();//refenciamos el animator
         _rigidbody = GetComponent<Rigidbody>();
+        _audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -38,6 +40,19 @@ public class PlayerController : MonoBehaviour
         Vector3 desiredForward=Vector3.RotateTowards(transform.forward,movement,turnSpeed*Time.fixedDeltaTime,0f);
         
          rotation=Quaternion.LookRotation(desiredForward);
+
+         if (isWalking)
+         {
+             if (!_audioSource.isPlaying)
+             {
+                 _audioSource.Play();
+             }
+         }
+         else
+         {
+             _audioSource.Stop();
+         }
+            
     }
 //cuando el animator cambie 
     private void OnAnimatorMove()
